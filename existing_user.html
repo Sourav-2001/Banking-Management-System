@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <div class="container" id="logIn">
+        <div class="navbar">
+            <!-- Navigation Bar Content -->
+            <nav>
+                <ul>
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logo">
+            <!-- Logo Content -->
+            <img src="logo.png" alt="Your Logo">
+        </div>
+
+        <div class="form-container">
+            <!-- User Authentication Form -->
+            <h2>Existing user</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number" required>
+                </div>
+                <div class="form-button">
+                    <button type="button" onclick="logIn()"><a href="user_details.html"></a> Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container hidden" id = "user-details" >
+        <div class="navbar">
+            <button class="logout-button">  <a href="landing page.html"></a>  Log Out</button>
+        </div>
+    
+        <div class="user-details">
+            <!-- User Details Content -->
+            <h1>Welcome, <span id = "S_username"></span></h1>
+            <p>Account Number:<span id = "S_account-number"></span> </p>
+            <p>Balance: <span id = "S_balance"></span></p>
+        </div>
+    
+        <div class="functions" id="function-div">
+            <!-- Functions Div Content -->
+      <button class="function-button" id="deposit-button" onclick="deposit()">Deposit</button>
+          
+     <button class="function-button" id="withdraw-button" onclick="withdraw()">Withdraw</button>
+          
+     <button class="function-button" id="transfer-button" onclick="transfer()">Transfer Money</button>
+              </div>
+    
+            <div id="deposit-div" class="hidden">
+                <input type="number" id="deposit-amount" placeholder="Enter Amount">
+                <button id="deposit-submit" onclick="deposit_submit()">Deposit</button>
+            </div>
+    
+            <div id="withdraw-div" class="hidden">
+                <input type="number" id="withdraw-amount" placeholder="Enter Amount">
+                <button id="withdraw-submit" onclick="withdraw_submit()">Withdraw</button>
+            </div>
+    
+            <div id="transfer-div" class="hidden">
+                <input type="number" id="transfer-account" placeholder="Enter Account Number">
+                <input type="number" id="transfer-amount" placeholder="Enter Amount">
+                <button id="transfer-submit" onclick="transfer_submit()">Transfer</button>
+            </div>
+    
+     </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

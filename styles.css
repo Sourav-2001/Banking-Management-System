@@ -1,0 +1,148 @@
+
+
+
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+        background-image: url(https://images.unsplash.com/photo-1551005916-2de2d0746c9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+}
+
+/* Container to center content */
+.container {
+    max-width: 800px;
+    margin:  auto;
+    margin-top: 75px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #4a90e2; /* Vibrant blue background */
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px; /* Increased margin */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold; /* Added font-weight */
+}
+
+/* Logo Styles */
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* User Options Styles */
+.options {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 10px;
+}
+
+.options h2 {
+    margin-bottom: 20px;
+    font-size: 28px; /* Larger font size */
+    color: #333;
+}
+
+.user-options a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 12px 20px; /* Increased padding */
+    background-color: #ff6b6b; /* Bright red background */
+    color: #fff;
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.user-options a:hover {
+    background-color: #e94e77; /* Lighter red on hover */
+}
+
+/* Form and Button Styles */
+.form-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px; /* Larger font size */
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Increased margin */
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-button button {
+    display: inline-block;
+    padding: 12px 24px; /* Increased padding */
+    background-color: #4a90e2; /* Vibrant blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button button:hover {
+    background-color: #3579b6; /* Darker blue on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+
+
